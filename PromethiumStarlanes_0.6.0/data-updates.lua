@@ -59,13 +59,39 @@ if data.raw.technology["refinery"] then
       end
     end
     
-    log_message("Refinery technology updated with science packs from quality-module-2: " .. serpent.block(tech.unit.ingredients))
+    -- Update prerequisites to include efficiency-module-2
+    tech.prerequisites = {"quality-module-2", "efficiency-module-2"}
+    
+    log_message("Refinery technology updated with science packs from quality-module-2 and new prerequisites: " .. serpent.block(tech.prerequisites))
   else
     log_message("Error: quality-module-2 technology not found")
   end
-  
-  -- Keep the prerequisite
-  tech.prerequisites = {"quality-module-2"}
 else
   log_message("Error: refinery technology not found")
 end
+
+-- Override refinery recipe
+data:extend({
+  {
+    type = "recipe",
+    name = "refinery",
+    icon = "__promethium-quality__/graphics/icons/refinery.png",
+    icon_size = 64,
+    category = "crafting-with-fluid",
+    energy_required = 12,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 200},
+      {type = "item", name = "low-density-structure", amount = 100},
+      {type = "item", name = "electric-engine-unit", amount = 20},
+      {type = "item", name = "processing-unit", amount = 50},
+      {type = "item", name = "advanced-circuit", amount = 100},
+      {type = "item", name = "efficiency-module-2", amount = 5},
+      {type = "item", name = "quality-module-2", amount = 5},
+      {type = "fluid", name = "lubricant", amount = 100}
+    },
+    results = {
+      {type = "item", name = "refinery", amount = 1}
+    }
+  }
+})

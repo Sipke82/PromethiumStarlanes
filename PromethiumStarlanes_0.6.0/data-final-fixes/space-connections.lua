@@ -37,7 +37,7 @@ local function update_vanilla_connection(name, length, asteroid_spawns)
 end
 
 -- Define asteroid spawn definitions for vanilla connections
-update_vanilla_connection("nauvis-vulcanus", 100000, {
+update_vanilla_connection("nauvis-vulcanus", 30000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -47,7 +47,7 @@ update_vanilla_connection("nauvis-vulcanus", 100000, {
   }
 })
 
-update_vanilla_connection("vulcanus-nauvis", 100000, {
+update_vanilla_connection("vulcanus-nauvis", 30000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -57,7 +57,7 @@ update_vanilla_connection("vulcanus-nauvis", 100000, {
   }
 })
 
-update_vanilla_connection("nauvis-gleba", 110000, {
+update_vanilla_connection("nauvis-gleba", 35000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -67,7 +67,7 @@ update_vanilla_connection("nauvis-gleba", 110000, {
   }
 })
 
-update_vanilla_connection("gleba-nauvis", 110000, {
+update_vanilla_connection("gleba-nauvis", 35000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -77,7 +77,7 @@ update_vanilla_connection("gleba-nauvis", 110000, {
   }
 })
 
-update_vanilla_connection("nauvis-fulgora", 130000, {
+update_vanilla_connection("nauvis-fulgora", 30000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -87,7 +87,7 @@ update_vanilla_connection("nauvis-fulgora", 130000, {
   }
 })
 
-update_vanilla_connection("fulgora-nauvis", 130000, {
+update_vanilla_connection("fulgora-nauvis", 30000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -97,7 +97,7 @@ update_vanilla_connection("fulgora-nauvis", 130000, {
   }
 })
 
-update_vanilla_connection("vulcanus-gleba", 115000, {
+update_vanilla_connection("vulcanus-gleba", 35000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -107,7 +107,7 @@ update_vanilla_connection("vulcanus-gleba", 115000, {
   }
 })
 
-update_vanilla_connection("gleba-vulcanus", 115000, {
+update_vanilla_connection("gleba-vulcanus", 35000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -117,7 +117,7 @@ update_vanilla_connection("gleba-vulcanus", 115000, {
   }
 })
 
-update_vanilla_connection("gleba-fulgora", 125000, {
+update_vanilla_connection("gleba-fulgora", 50000, {
   {
     asteroid = "small-promethium-asteroid",
     spawn_points = {
@@ -175,7 +175,7 @@ data:extend({
     from = "aquilo",
     to = "shattered-planet",
     order = "aquilo-shattered-planet",
-    length = 55000,
+    length = 75000,
     icons = {
       { icon = "__space-age__/graphics/icons/planet-route.png", icon_size = 64 }
     },
@@ -272,7 +272,7 @@ data:extend({
     from = "shattered-planet",
     to = "aquilo",
     order = "shattered-planet-aquilo",
-    length = 55000,
+    length = 75000,
     icons = {
       { icon = "__space-age__/graphics/icons/planet-route.png", icon_size = 64 }
     },
@@ -369,7 +369,7 @@ data:extend({
     from = "fulgora",
     to = "shattered-planet",
     order = "fulgora-shattered-planet",
-    length = 50000,
+    length = 65000,
     icons = {
       { icon = "__space-age__/graphics/icons/planet-route.png", icon_size = 64 }
     },
@@ -466,7 +466,7 @@ data:extend({
     from = "shattered-planet",
     to = "fulgora",
     order = "shattered-planet-fulgora",
-    length = 50000,
+    length = 65000,
     icons = {
       { icon = "__space-age__/graphics/icons/planet-route.png", icon_size = 64 }
     },
